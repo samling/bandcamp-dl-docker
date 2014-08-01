@@ -5,7 +5,7 @@ Dockerized bandcamp-dl from iheanyi/bandcamp-dl
 
 ## Usage
 
-`docker run samling/bandcamp-dl-docker -v=/path/to/your/downloads:/downloads:rw -t samling/bandcamp-dl-docker http://artist.bandcamp.com/album/your-target-album`
+`docker run --rm -v=/path/to/your/downloads:/downloads:rw samling/bandcamp-dl-docker http://artist.bandcamp.com/album/your-target-album`
 
 ## Considerations
 
