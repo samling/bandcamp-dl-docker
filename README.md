@@ -18,3 +18,7 @@ If the bandcamp URL does not contain /album/ (some artist pages contain a sample
 ## Dependencies
 
 This app uses my [python-base Docker image](https://github.com/samling/python-base)
+
+## Disclaimer
+
+I do not support stealing artists' work; this is for educational purposes only. If you enjoy what you hear, please support the artist by purchasing their album. I am not the original creator of bandcamp-dl.
