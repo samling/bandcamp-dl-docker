@@ -4,7 +4,7 @@ FROM samling/docker-python-base
 RUN git clone --depth 1 https://github.com/iheanyi/bandcamp-dl /app
 
 # Move requirements.txt into folder
-ADD requirements.txt /app
+ADD requirements.txt /app/
 
 # Set permissions
 RUN chown -R root /app
