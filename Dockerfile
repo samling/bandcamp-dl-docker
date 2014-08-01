@@ -1,7 +1,10 @@
 FROM samling/docker-python-base
 
-# Add pyapp
-ADD pyapp/ /app
+# Clone latest version of bandcamp-dl
+RUN git clone --depth 1 https://github.com/iheanyi/bandcamp-dl /app
+
+# Move requirements.txt into folder
+ADD requirements.txt /app
 
 # Set permissions
 RUN chown -R root /app

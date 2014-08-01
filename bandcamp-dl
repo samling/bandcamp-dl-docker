@@ -1,8 +1,0 @@
-echo "
-
-Building and running samling/bandcamp-dl
-Downloading files to $PWD/downloads
-
-"
-
-docker run --rm -v=$PWD/downloads:/downloads:rw -t samling/bandcamp-dl $1 || echo "****** Please run this first: docker build -t samling/bandcamp-dl . ******"
