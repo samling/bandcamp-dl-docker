@@ -1,4 +1,4 @@
-FROM samling/pythonbase
+FROM samling/docker-python-base
 
 # Add pyapp
 ADD pyapp/ /app
@@ -13,4 +13,6 @@ RUN mkdir /downloads
 RUN pip install -r /app/requirements.txt
 
 # Run script with python binary
-CMD ["/bin/bash", "/app/bandcamp-dl.sh"]
+#CMD ["/bin/bash", "/app/bandcamp-dl.sh"]
+#ENTRYPOINT /app/bandcamp-dl.sh
+ENTRYPOINT ["/usr/bin/python", "/app/bandcamp-dl/bandcamp-dl.py", "--overwrite", "--base-dir=/downloads"] 
